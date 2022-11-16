@@ -14,7 +14,7 @@ const productos = [
     new producto("samsung galaxy 20",75000,101, 2),
     new producto("alcatel one pro",15000,102,3),
     new producto("TCL advance",50000,103,4)
-   
+
 ]
 console.log(productos);
 function resultados(array){
@@ -27,14 +27,14 @@ function resultados(array){
 let clave= "diego"
 function login(){
     let ingresar= false;
-    
+
     for (let i=0;i<3;i++){
         let nombreusuario= prompt("ingrese su nombre de usuario.");
         if(nombreusuario==clave){
             alert("bienvenido "+nombreusuario+"");
             ingresar= true;
             break;
-         }else { 
+         }else {
             alert(" Error.Este es el intento "+(i+1)+" de 3");
         }
     }
@@ -64,7 +64,7 @@ let opcion= prompt("Elegí una opción: \n1- Agregar producto . \n2 - catalogo. 
             case "2":
                 alert(resultados(productos));
                 break;
-            case "3": 
+            case "3":
                 let catalogo=nuevoarray.sort((a,b) =>a.precio-b.precio);
                 alert(resultados(catalogo))
                 break;
@@ -72,7 +72,7 @@ let opcion= prompt("Elegí una opción: \n1- Agregar producto . \n2 - catalogo. 
                 alert("Opcion invalida");
                 break;
         }
-    
+
         opcion = prompt("Elegí una opción: \n1- Agregar producto. \n2 - catalogo. \n3 - orden (por precio). \nPresioná X para finalizar.");
     }
     }else{
@@ -149,6 +149,60 @@ if(numero>=10 && numero<=50){
 
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ACTIVIDAD N°1 DEL WORKBOOK
+
+/* let numero1=parseInt(prompt("Eliga un numero fijo"))
+
+for(let i=0;i<3;i++){
+    let numero2=parseInt(prompt("ingrese un segundo numero a sumar"));
+    let suma=numero1+numero2
+    alert(suma)
+}
+ */
+/*  let palabra=prompt("Ingrese una palabra, poner esc para salir");
+let palabra2=" ";
+
+while(palabra!="esc" ){
+    palabra2= prompt("ingrese otra palabra");
+    let sumar=palabra+" "+palabra2;
+    alert(sumar)
+}
+ */
+/* let texto=prompt("ingrese un texto");
+let resultado= texto;
+let textoConcatenar=" ";
+
+while(textoConcatenar!="esc" && texto!="esc"){
+    textoConcatenar= prompt("ingrese un texto ");
+    resultado=resultado+" "+textoConcatenar;
+    alert(resultado);
+} */
+
+/* let repetir=parseInt(prompt("ingrese la cantidad de repeticiones"));
+
+for(let i=0;i<repetir;i++){
+    alert("hola");
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //actividad 1
 /* let nombre1="homero";
@@ -158,7 +212,7 @@ console.log(nombre1);
 console.log(apellido);
 console.log(edad);  */
 
-//actividad 2 
+//actividad 2
 
  /* const ciudad1="springfield";
 const ciudad2="Shelbyville"
@@ -170,7 +224,7 @@ console.log(ciudad2);
 console.log(ciudad3);
 console.log(ciudad4);
 console.log(ciudad5); */
- 
+
 //actividad 3
 
  /* let nombre="Bart simpson";
@@ -182,13 +236,13 @@ let carnet= "codigo:"+codigo+
             "\nnombre:"+nombre+
             "\ncalle:"+calle+
             "\nciudad:"+ciudad+
-            "\nnacimiento:"+nacimiento+ 
+            "\nnacimiento:"+nacimiento+
             "a la grande le puse cuca";
 let concatenar=nombre+" "+calle+" "+ciudad+" "+nacimiento+" "+
 codigo;
 console.log(concatenar);
 console.log(carnet); */
- 
+
 // \n nos permite saltar de parrafo
 
 // ejercicio 4
@@ -204,7 +258,7 @@ let familia= "La familia simpson esta integrada por \n"+nombre+"\n"
                                                      +nombre4+"\n"
                                                      +nombre5;
 console.log(familia);
-alert(familia); 
+alert(familia);
  */
 // ejercicio 5
 /* const descuento20= 0.2;
@@ -216,8 +270,8 @@ console.log("20% es "+aplicardescuento+ "\n y el de 30% es " +aplicardescuento2)
 alert("20% es "+aplicardescuento+ "\n y el de 30% es " +aplicardescuento2)
  */
 
-// Parte 2 
-// ejercicio 1 
+// Parte 2
+// ejercicio 1
 
 /* let nombre=prompt("Ingrese tu personaje favorito");
 
@@ -270,7 +324,7 @@ if(usuario>=0 && usuario<=1000){
 };
  */
 // Ejercicio 5
-
+/*
 let producto1=prompt("ingrese un producto");
 let producto2=prompt("ingrese otro producto");
 let producto3=prompt("ingrese otro producto");
@@ -283,46 +337,191 @@ if(producto1!="" && producto2!="" && producto3!="" && producto4!=""){
                                     +producto4)
 }else{
     alert("Te falta cargar productos")
+} */
+
+// parte 3
+
+// ejercicio 1
+/* let palabra=prompt("ingrese un texto");
+let intentos=parseInt(prompt("ingrese un numero"));
+
+for(let i=0;i<intentos;i++){
+    alert(palabra)
+} */
+
+// ejercicio 2
+
+/* let numero=parseInt(prompt("cantidad de intentos"));
+
+for(let i=0; i<numero;i++){
+    if(i>3){
+        break}
+        alert(" lado")
+    } */
+
+// ejercicio 3 prestar atencion
+
+/* let alumnos
+
+for(let i=0;i<10;i++){
+    alumnos+=prompt("ingrese nombres de los alumnos")+"\n"
+}
+alert(alumnos)
+
+let alumnos=0;
+let total
+
+for(let i=0;i<10;i++){
+    alumnos=prompt("ingrese nombres de los alumnos")
+    total += alumnos+ "\n";
+}
+alert(total) */
+
+// ejercicio 4 prestar atencion
+
+/* let alumnos=prompt("nombres");
+let ingresados
+
+while(alumnos!="homero"){
+    ingresados+=alumnos+"\n";
+    alumnos=prompt("nombres")
+}
+alert(ingresados)
+ */
+
+// ejercicio 5
+
+/* let opcion=prompt("elija del 1 al 4, y esc para salir")
+
+while(opcion!="esc"){
+    switch(opcion){
+        case "1":
+            alert("tomate");
+            break;
+        case "2":
+            alert("papa");
+            break;
+        case "3":
+            alert("pollo");
+            break;
+        case "4":
+            alert("carne");
+            break;
+        default:
+            alert("error");
+            break;
+    }
+opcion=prompt("seleccione una opcion del 1 al 4")
+}
+ */
+
+// parte 4 ejercicios
+
+// ejercicio 1
+/* function entrada(){
+     return prompt("palabra");
+ }
+ */
+// function procesamiento(valor){
+//     return "la entrada es "+valor
+// }
+
+// function salida(valor) {
+//     alert(valor)    
+// }
+
+// salida(procesamiento(entrada()))
+
+// funcion flecha
+
+/* const procesamiento= x => x+ " ese fue el mensaje";
+
+const salida= valor => alert(valor);
+
+salida(procesamiento(entrada())); */
+// ejercicio 2
+
+
+/* function redondeo(valor){
+    return Math.round(valor)
+};
+
+for(let i=0;i<5;i++){
+    let numero=parseFloat(prompt("ingrese un numero"));
+    alert(redondeo(numero))
+} */
+
+/* const resumir= valor => Math.round(valor)
+
+for(let i=0;i<5;i++){
+    let numero=parseFloat(prompt("ingrese un numero"));
+    alert(resumir(numero))
 }
 
+ */
+
+// ejercicio 3
+
+/* function impuesto(precio,porcentaje){
+    return precio+((precio*porcentaje)/100)
+}
+
+for(let i=0;i<5;i++){
+    let resultado= impuesto(parseInt(prompt("numero precio")),parseFloat(prompt("porcentaje")));
+    alert(resultado)
+} */
+
+/* const impuesto= (a,b)=> a+((a*b)/100);
+
+for(let i=0;i<5;i++){
+   let numero=parseInt(prompt("precio"));
+   let porcentaje= parseInt(prompt("porcentaje"));
+
+   alert(impuesto(numero,porcentaje));
 
 
+    } */
 
+// ejercicio 4
 
+/* function cotizarDolar(pesos){
+    return pesos/300
+}
 
+function cotizarPesos(dolar){
+    return dolar*300
+}
 
+let opcion= prompt("1 pesos, 2 dolar")
+let valor=prompt("valor");
 
+switch(opcion){
+    case "1":
+        alert(cotizarPesos(valor));
+        break
+    case "2":
+        alert(cotizarDolar(valor));
+        break
+    default:
+        alert("error");
+} */
 
+// ejercicio 5
 
+const validacion= cadena=>cadena!="";
 
+let entrada= prompt("cadena");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+while(entrada!="esc"){
+    alert(validacion(entrada));
+    entrada= prompt("mensaje")
+}
 
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------------
 
-/* // clases 1 
+/* // clases 1
 // comentario de una linea crtl+k+
 // shift+alt+A ordena el codigo
 let nombre1="diego";
@@ -397,12 +596,12 @@ console.log(dato);
 alert("Bienvenido "+dato);
 alert("Realicemos una suma "+dato);
 let dato2= parseInt(prompt("Ingrese un numero"));
-let dato3= parseInt(prompt("ingrese un segundo numero")); 
+let dato3= parseInt(prompt("ingrese un segundo numero"));
 let concatenacion= dato2+dato3
-console.log("El primer numero fue "+dato2+ ",el segundo es "+dato3+ 
+console.log("El primer numero fue "+dato2+ ",el segundo es "+dato3+
 " y el resultado fue "+concatenacion);
 alert("El resultado de tu operacion es "+concatenacion);
-alert(" tu resultado fue "+concatenacion+". Fue un gusto "+dato) 
+alert(" tu resultado fue "+concatenacion+". Fue un gusto "+dato)
  */
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -417,12 +616,12 @@ if(Parametro/true){
     console.log("resultado correcto");
 } else(falso){
     console.log("resultado falso")
-} 
+}
 
 // PARA AGREGAR UNA NUEVA CONDICION
 else if("parametro"){
     resultado
-} 
+}
 
  let tiempo="soleado";
 if(tiempo=="soleado"){
@@ -430,7 +629,7 @@ if(tiempo=="soleado"){
     alert("calor")
 }else{
     console.log("sali con paraguas")
-} 
+}
 
 // ejemplo de else if
 
@@ -473,7 +672,7 @@ if(edadUsuario>=edadObligatoria){
 }
 else{
     console.log("no podes votar");
-}; 
+};
 
 let edadObligatoria=18;
 let edadOptativa=16
@@ -494,7 +693,7 @@ if(numeroA%2==0){
     console.log("el numero es par");
 }else{
 console.log("el numero es impar");
-}; 
+};
 
 // valores booleanas
 
@@ -552,14 +751,14 @@ if(dudoso){
 //"!" invierte el valor
 if(!variable1){
     console.log("vale true");
-}else{ 
+}else{
     console.log("vale falso");
 }
 let nombreIngresado=prompt("Ingresar nombre");
 let apellidoIngresado=prompt("Ingresar apellido");
 if((nombreIngresado!="")&&(apellidoIngresado!="")){
     alert("Nombre:"+nombreIngresado+ " "+apellidoIngresado)
-}else{ 
+}else{
     alert("error")
 }
 let numero=1;
@@ -578,7 +777,7 @@ if((nombre=="ANA")||(nombre=="ana")){
     alert("el nombre ingresado es ana");
 }else{
     alert("no es ana")
-} 
+}
 
 let nombre=prompt("ingresar nombre");
 if((nombre=="ANA")&&(nombre!="")||
@@ -641,11 +840,11 @@ if(nombre!=""|| apellido!=""){
     alert("bienvenido "+nombre+" "+apellido);
 }else{
     alert("faltan datos")
-} 
+}
 
  if((nombre!="")&&(nombre=="Flor"|| nombre=="flor")){
     alert("Bienvenido "+nombre)
-} 
+}
 
 let edadConductor=parseInt(prompt("ingrese tu edad"));
 
@@ -656,6 +855,533 @@ if(edadConductor>=18){
 }else{
     alert("no podes conducir")
 }; */
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Clase 3
+
+// ciclos por Conteo "for"
+
+// ciclos condicionales: repiten un bloque de codigo mientras la condicion evaluada sea cierta "while","Do ... WHILE"
+
+// for(desde(imicializacio), hasta,actualizacion){
+    // consecuencia en cada repeticion}
+
+// la variable i solo sirve para el bucle
+// se le suele iniciar en el cero porque las posiciones de la arrays
+
+/* for(let i=1; i<=3;i++){
+    alert("Usted es el jefe de los minisuper. y es su intento numero "+i)
+}
+
+alert("gracias, vuelvas prontos")
+ */
+/* for(let i=0;i<3;i++){
+    alert("usted es el jefe de los mini supers?");
+    console.log(" repeticion "+(i+1));
+}
+ */
+/*  let oportunidades=parseInt(prompt("Ingrese el numero de oportunidades"));
+
+for(let i=1;i<=oportunidades;i++){
+    console.log("es tu oportunidad n° "+i);
+} */
+
+/* let numero=parseInt(prompt("ingrese un num"));
+
+for(let i=1;i<=10; i++){
+    let resultado= numero*i;
+    console.log(resultado);
+    alert(numero+"*"+i+"="+resultado)
+} */
+
+
+/* for(let i=1;i<=5;i++){
+    let nombre=prompt("Ingresar nombre");
+    alert("Turno n° "+i+ "nombre:"+nombre);
+    console.log(nombre);
+} */
+
+// i++ operador de incremento
+// i-- operador de descremento
+
+/* for(let i=10;i>0; i--){
+    alert("Faltan "+i+ " segundos para que termine el año")
+} */
+
+/* let nombre;
+
+for(let i=0;i<3;i++){
+    nombre=prompt("ingrese tu nombre");
+    alert("Buenos noches "+nombre)
+}
+
+ */
+/* let pass="goku";
+
+// "break" hace que termine el ciclo cuando se cumpla la condicion
+for(let i=0;i<3;i++){
+    let contra=prompt("ingrese la contraseña")
+    if(pass==contra){
+        alert("loggin existoso");
+        break
+    }else{
+        alert("repeti")
+    }
+}
+alert("fin")
+
+for(let i=0;i<=10;i++){
+    if(i==5){
+        console.log(i);
+        break;
+    }
+    alert(i)
+}
+ */
+
+// "continue" que najo cierta condicion el ciclo saltee esa repeticion y siga con la proxima
+
+/* for(let i=1;i<=10;i++){
+    if(i==4){
+        alert("sapo muerto");
+        continue;
+    }
+    alert(i)
+} */
+
+/* for(let i=1;i<=10;i++){
+    if(i==5){
+        continue
+    }
+    alert(i)
+} */
+
+// continue hace que se saltee segun el valor que le demos o ejecuta una orden en dicho valor
+// repasar el continue
+
+/* for(let i=1;i<=10;i++){
+    if(i==5){
+        alert("se salteo");
+        continue
+    }
+    alert(i)
+} */
+
+
+// break y while se usan dentro del for
+
+// while crean bucles ilimitados dependiendo de la condicion indicada
+// mientras se cumple la condicion indicada, repite las instrucciones incluidas dentro del bucle
+
+// NO HACER BUCLES INFINITOS
+ /* let repetir=
+ repetir=true
+
+ whilw(repetir){
+    console.log("al infinito y mas alla");
+ }
+ */
+// eso es un bucle infinito
+
+/* let repetir=true;
+
+while(repetir){
+    console.log("Soy un bucle while");
+    repetir=false
+};
+
+let contador=0;
+
+while(contador<5){
+    alert("soy un bucle while");
+    contador++
+}
+ */
+
+// los bucles while tambien puede dar bucles infinitos
+/* let edad=parseInt(prompt(" Ingrese tu edad"));
+
+while(edad<16){
+    console.log("no podes pasar");
+    edad=parseInt(prompt("edad"))
+}
+
+let clave="kamina";
+let palabra=prompt("ingrese la palabra correcta");
+
+while(clave!=palabra){
+    alert("error");
+    palabra=prompt("intente nuevamente")
+}
+ */
+/*
+let entrada=prompt("Ingrese un dato")
+
+while(entrada!="esc"){
+    alert("El usuario ingreso "+entrada);
+    entrada=prompt("ingresar otro dato")
+
+}
+
+ */
+
+/* let clave="simon";
+let continuar= true;
+let passUsuario=prompt("Ingrese un dato");
+
+while(continuar){
+    if(passUsuario==clave){
+        alert("bienvenido");
+        continuar=false
+        break;
+    }
+    alert("contraseña incorrecta");
+    passUsuario=prompt("ingresa la contraseña")
+}
+
+alert(("loggin")) */
+
+/* while(continuar){
+    if(passUsuario==clave){
+        alert("bienvenido");
+        continuar=false
+        break;
+    }else{
+    alert("contraseña incorrecta");}
+
+    passUsuario=prompt("ingresa la contraseña")
+} */
+
+/* while(passUsuario!=clave){
+    alert("error");
+    passUsuario=prompt("ingrese nuevamente")
+}
+
+alert("bienvenido "+clave)
+  */
+
+// do... while
+
+/* let condicion=false;
+
+do{
+    console.log(("soy un bucle do... while"));
+} while(condicion);
+
+let condition2=true;
+let clave="diego"
+
+do{
+    let passUsuario=prompt("imgresar contraseña");
+    if(clave==passUsuario){
+        alert("bienvenido");
+        condition2=false;
+    }
+}while(condition2)
+ */
+/* let numero=0;
+
+do{
+    numero=prompt("ingresar numero");
+    console.log(numero);
+}while(parseInt(numero))
+ */
+
+// let opcion=prompt(" elegi una  \n1-te \n2-cafe \n3-jugo. \nX para cancelar")
+
+/* while(opcion!="x"){
+if(opcion=="1"){
+    alert("elegiste la opcion te")
+}else if(opcion=="2"){
+    alert("elegiste cafe")
+}else if(opcion=="3"){
+    alert("elegiste jugo")
+}else if(opcion=="x"){
+    break
+}
+else{
+    alert("elegiste una opcion incorrecta")
+};
+
+opcion=prompt(" elegi una opcion \n1-te \n2-cafe \n3-jugo. \nX para cancelar")
+}
+ */
+/* switch(opcion){
+    case "1":
+        alert("te");
+        break;
+    case "2":
+        alert("cafe");
+        break;
+    case "3":
+        alert("jugo");
+        break;
+    default:
+        alert("error");
+        break;
+} */
+/* while(opcion!="x"){
+switch(opcion){
+    case "1":
+        alert("te");
+        break;
+    case "2":
+        alert("cafe");
+        break;
+    case "3":
+        alert("jugo");
+        break;
+    default:
+        alert("error");
+        break;
+}
+opcion=prompt(" elegi una opcion \n1-te \n2-cafe \n3-jugo. \nX para cancelar")
+
+} */
+/* let entrada= prompt("ingresar un nombre");
+
+while(entrada!="esc"){
+    switch(entrada){
+        case "ana":
+            alert("hola ana");
+            break;
+        case "juan":
+            alert("hola juan");
+            break;
+        default:
+            alert("error");
+            break;
+    }
+    entrada= prompt("ingresar un nombre");
+    }
+ */
+
+// ----------------------------------------------------------------------------------------------------
+
+// clase 5 funciones
+
+// se pueden llamar en diferentes momentos
+// funciones que se pueden repetir
+
+// se puede evitar instrucciones duplicadas, soluciona problemas complejps, da orden y versatilidad
+// la funcion tiene que tener el verbo de la accion
+// si pongo parametros de mas, no los tomo, toma exactamente la cantidad de parametros que le pasaste
+
+
+/* function saludar(){
+    console.log("saludar");
+}
+
+saludar();
+
+
+for(let i=0;i<3;i++){
+    saludar();
+} */
+
+/* let nombreNuevo=prompt("ingrese nombre");
+alert(" tu nombre es "+nombreNuevo)
+
+function nombrar(){
+    let nombreNuevo=prompt("ingrese nombre");
+    alert(" tu nombre es "+nombreNuevo)
+}
+
+nombrar();
+
+nombrar()
+nombrar() */
+
+// parametro() pueden haber varios valores
+
+/* function saludarConNombre(nameUsuario){
+    alert("hola "+nameUsuario)
+}
+ */
+// saludarConNombre("diego")
+
+/* for(let i=0;i<3;i++){
+    let name=prompt("nombre")
+    saludarConNombre(name)
+} */
+
+/* let name=prompt("nombre")
+for(let i=0;i<3;i++){
+
+    saludarConNombre(name)
+}
+
+function saludarConNombre(nameUsuario){
+    alert("hola "+nameUsuario)
+} */
+
+/* function saludarConNombre(nameUsuario,otroNombre,otroMas){
+    alert("hola "+nameUsuario+" "+otroNombre+" "+otroMas)
+}
+
+saludarConNombre("diego","brian","zamir")
+
+ */
+/* function saludarConTiempo(nombre,momento){
+    alert("buenas "+momento+ " "+nombre)
+}
+
+let momentoDia=prompt("mañana,tarde o noche");
+let nombreA=prompt("nombre");
+
+saludarConTiempo(nombreA,momentoDia)
+ */
+/*  function sumarNum(numero1,numero2){
+    alert(numero1+numero2)
+} */
+
+// sumarNum(2,3)
+
+// las funcione, nos tiene que devolver algo, y para eso esta el return. sino no nos deuvelve nada
+// return expone hacia afuera el producto de la funcion, obtiene el valor de la funcion cuando se las llama
+
+/* function sumar(primerNumero,segundNumero){
+    let resultado=primerNumero+segundNumero;
+    return resultado
+}
+
+function mostrar(mensaje){
+    console.log(mensaje);
+}
+
+
+alert(sumar(1,2))
+mostrar(sumar(3,4)); */
+
+/* function directo(primerNumero,segundoNumero){
+    return primerNumero+segundoNumero
+}
+
+alert(directo(2,3))
+ */
+/* function dividir(numeroA,numeroB){
+    return numeroA/numeroB;
+}
+
+console.log(dividir(4,2));
+console.log(dividir(2,4));
+
+
+function dividir(numeroA,numeroB){
+    let resultado= numeroA/numeroB;
+    return resultadoS
+}
+
+console.log(dividir(4,2));
+console.log(dividir(2,4)); */
+
+/* function calcular(numeroA,numeroB,operador){
+switch(operador){
+    case "+":
+        return numeroA+numeroB;
+    case "-":
+        return numeroA-numeroB;
+    case "*":
+        return numeroA*numeroB;
+    case "/":
+        return numeroA/numeroB;
+    default:
+        return "opcion invalida";
+}
+}
+
+console.log(calcular(1,2,"+"));
+ */
+// scope: es la zona del programa en el cual se define, que restringe su uso y su alcance
+// tiene de ambitos: global y local
+// global es una variable declarada afuera de cualquier funcion o bloque
+// local es una variable que definimos dentro de una funcion o bloque, y se accede dentro de ese bloque
+/* let nombre= "diego oliva" //variable global
+
+function saludar(){
+    let nombre= "kamina";//variable local
+    console.log(nombre);
+}
+
+console.log(nombre);//acceso a nombre global
+saludar()//accede a nombre local
+ */
+/* let variableGlobal="soy una variable global"
+console.log(variableGlobal);
+
+function cambiar(){
+    variableGlobal="me cambiaron desde una función"
+    console.log(variableGlobal);
+}
+
+cambiar();
+console.log(variableGlobal);
+
+if(true){
+    variableGlobal="ahora me cambiaron desde un if";
+    console.log(variableGlobal);
+}
+
+function cambiarLocal(){
+    let variableGlobal="soy una nueva variable. pero solo vivo dentro de la funcion";
+    console.log(variableGlobal);
+}
+cambiarLocal()
+console.log(variableGlobal);
+ */
+// funciones anonimas
+
+// las variables se tiene que declarar antes de poder usarlas
+// en cambio las funciones se pueden acceder desde cualquier lugar
+
+/* const suma= function(a,b){
+    return a+b;
+}
+
+console.log(suma(2,3))
+
+const rest= function(a,b){return a-b};
+console.log(rest(5,3)); */
+
+/* const suma= (a,b) =>{return a+b} */
+    
+// si es una funcion de una solo linea con retorno, osea una funcion, podemos evitar escribir el cuerpo
+
+/* const resta= (a,b)=> a-b;
+
+console.log(suma(2,3));
+console.log(resta(5,2));
+
+const division=(a,b)=> {return a/b} */
+
+// si hay un solo parametro, se puede sacar los parentesis
+
+/* const mensaje=x=>" el mensaje es "+x
+
+const multiplicar=(a,b)=>a*b;
+
+console.log(division(6,2));
+console.log(mensaje("kamina"));
+console.log(multiplicar(2,2));
+ */
+
+/* const sumar=(a,b)=> a+b;
+const resta=(a,b)=> a-b;
+
+const iva=x=>x*0.21;
+
+let precio=150000;
+let descuento=40000;
+
+
+let precioNuevo=resta(sumar(precio,iva(precio)),descuento); */
+
+// primero se calcula el iva
+// se le suma el producto al precio del iva
+// a ese resultado se le aplica el descuento
+
+// console.log("el precio normal es "+precio+ " luego de tramites el precio es "+precioNuevo);
 
 
 
@@ -690,7 +1416,7 @@ class PF{
         this.interes=0;// es la plata que voy a ganar
         this.acreditacion= new Date(); // dia de pago, en que dia me van a devolver la plata
         this.gananciatotal=0;
-    } 
+    }
     //lo que esta adentro de aca son funciones, y no tengo porque nombrar con "function"
     //el this marca la propiedad de esos objetos, por el constructor, usar THIS. si trabajo por afuera uso objeto.atributo
     //tofixed convierte un numero a string
